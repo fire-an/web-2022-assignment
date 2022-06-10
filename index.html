@@ -12,9 +12,14 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;508;600;700;800;900&display=swap"
       rel="stylesheet"
     />
-    <style>
+    <style type="text/tailwindcss">
       body {
         font-family: "Inter", sans-serif;
+      }
+      @layer utilities {
+        .slide-menu {
+          @apply;
+        }
       }
     </style>
   </head>
@@ -47,17 +52,17 @@
           <div class="menu-pc hidden lg:block" id="menu">
             <ul class="lg:flex lg:justify-end lg:space-x-8 text-center">
               <li
-                class="border block py-2 hover:text-[#FF6464] hover:bg-[#EDF7FA] lg:hover:bg-white"
+                class="block py-2 hover:text-[#FF6464] hover:bg-[#EDF7FA] lg:hover:bg-white"
               >
                 <a class="font-medium" href="work.html">Works</a>
               </li>
               <li
-                class="border block py-2 hover:text-[#FF6464] hover:bg-[#EDF7FA] lg:hover:bg-white"
+                class="block py-2 hover:text-[#FF6464] hover:bg-[#EDF7FA] lg:hover:bg-white"
               >
                 <a class="font-medium" href="blog.html">Blog</a>
               </li>
               <li
-                class="border block py-2 hover:text-[#FF6464] hover:bg-[#EDF7FA] lg:hover:bg-white"
+                class="block py-2 hover:text-[#FF6464] hover:bg-[#EDF7FA] lg:hover:bg-white"
               >
                 <a class="font-medium" href="#">Contact</a>
               </li>
@@ -117,81 +122,83 @@
           <p class="leading-[60px] text-[22px] text-center lg:text-left">
             Featured works
           </p>
-          <div class="grid lg:grid-cols-3 grid-col-1 gap-3">
-            <div>
-              <a href="#">
-                <img src="" alt="" />
-              </a>
-            </div>
-            <div class="col-span-2">
-              <h3 class="text-[30px] leading-[60px] font-bold">
-                Designing Dashboards
-              </h3>
-              <div class="mb-4">
-                <span class="p-1 bg-[#142850] text-white rounded-lg mr-3"
-                  >2020</span
-                >
-                <span class="text-[20px] text-[#8695A4]">Dashboard</span>
+          <div id="winfo">
+            <!-- <div class="grid lg:grid-cols-3 grid-col-1 gap-3">
+              <div>
+                <a href="#">
+                  <img src="" alt="" />
+                </a>
               </div>
+              <div class="col-span-2">
+                <h3 class="text-[30px] leading-[60px] font-bold">
+                  Designing Dashboards
+                </h3>
+                <div class="mb-4">
+                  <span class="p-1 bg-[#142850] text-white rounded-lg mr-3"
+                    >2020</span
+                  >
+                  <span class="text-[20px] text-[#8695A4]">Dashboard</span>
+                </div>
 
-              <p>
-                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-                amet sint. Velit officia consequat duis enim velit mollit.
-                Exercitation veniam consequat sunt nostrud amet.
-              </p>
-            </div>
-          </div>
-          <hr class="my-5" />
-          <div class="grid lg:grid-cols-3 grid-col-1 gap-3">
-            <div>
-              <a href="#">
-                <img src="" alt="" />
-              </a>
-            </div>
-            <div class="col-span-2">
-              <h3 class="text-[30px] leading-[60px] font-bold">
-                Designing Dashboards
-              </h3>
-              <div class="mb-4">
-                <span class="p-1 bg-[#142850] text-white rounded-lg mr-3"
-                  >2020</span
-                >
-                <span class="text-[20px] text-[#8695A4]">Dashboard</span>
+                <p>
+                  Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                  amet sint. Velit officia consequat duis enim velit mollit.
+                  Exercitation veniam consequat sunt nostrud amet.
+                </p>
               </div>
-
-              <p>
-                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-                amet sint. Velit officia consequat duis enim velit mollit.
-                Exercitation veniam consequat sunt nostrud amet.
-              </p>
             </div>
-          </div>
-          <hr class="my-5" />
-          <div class="grid lg:grid-cols-3 grid-col-1 gap-3">
-            <div>
-              <a href="#">
-                <img src="" alt="" />
-              </a>
-            </div>
-            <div class="col-span-2">
-              <h3 class="text-[30px] leading-[60px] font-bold">
-                Designing Dashboards
-              </h3>
-              <div class="mb-4">
-                <span class="p-1 bg-[#142850] text-white rounded-lg mr-3"
-                  >2020</span
-                >
-                <span class="text-[20px] text-[#8695A4]">Dashboard</span>
+            <hr class="my-5" />
+            <div class="grid lg:grid-cols-3 grid-col-1 gap-3">
+              <div>
+                <a href="#">
+                  <img src="" alt="" />
+                </a>
               </div>
+              <div class="col-span-2">
+                <h3 class="text-[30px] leading-[60px] font-bold">
+                  Designing Dashboards
+                </h3>
+                <div class="mb-4">
+                  <span class="p-1 bg-[#142850] text-white rounded-lg mr-3"
+                    >2020</span
+                  >
+                  <span class="text-[20px] text-[#8695A4]">Dashboard</span>
+                </div>
 
-              <p>
-                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-                amet sint. Velit officia consequat duis enim velit mollit.
-                Exercitation veniam consequat sunt nostrud amet.
-              </p>
+                <p>
+                  Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                  amet sint. Velit officia consequat duis enim velit mollit.
+                  Exercitation veniam consequat sunt nostrud amet.
+                </p>
+              </div>
             </div>
+            <hr class="my-5" />
+            <div class="grid lg:grid-cols-3 grid-col-1 gap-3">
+              <div>
+                <a href="#">
+                  <img src="" alt="" />
+                </a>
+              </div>
+              <div class="col-span-2">
+                <h3 class="text-[30px] leading-[60px] font-bold">
+                  Designing Dashboards
+                </h3>
+                <div class="mb-4">
+                  <span class="p-1 bg-[#142850] text-white rounded-lg mr-3"
+                    >2020</span
+                  >
+                  <span class="text-[20px] text-[#8695A4]">Dashboard</span>
+                </div>
+
+                <p>
+                  Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                  amet sint. Velit officia consequat duis enim velit mollit.
+                  Exercitation veniam consequat sunt nostrud amet.
+                </p>
+              </div>
+            </div>
+            <hr class="my-5" /> -->
           </div>
-          <hr class="my-5" />
         </section>
         <div>
           <footer class="container max-w-4xl mx-auto text-center">
