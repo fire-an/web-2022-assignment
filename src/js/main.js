@@ -37,7 +37,7 @@ document.getElementById("info").innerHTML = showInfo(pinfo);
 
 import { workInfo } from "./data";
 
-function showWork(winfos) {
+function showWorks(winfos) {
   if (!Array.isArray(winfos) || winfos.length == 0) return false;
   let result = "";
   for (let i = 0; i < winfos.length; i++) {
@@ -51,7 +51,7 @@ function showWork(winfos) {
     </div>
     <div class="col-span-2">
       <h3 class="text-[30px] leading-[60px] font-bold">
-        ${winfo.name}
+      <a href="detail.html?id=${winfo.id}">${winfo.name}</a>
       </h3>
       <div class="mb-4">
         <span class="p-1 bg-[#142850] text-white rounded-lg mr-3"
@@ -71,4 +71,4 @@ function showWork(winfos) {
 
   return result;
 }
-document.getElementById("winfo").innerHTML = showWork(workInfo);
+document.getElementById("winfo").innerHTML = showWorks(workInfo);

@@ -1,20 +1,27 @@
 import { workInfo } from "./data";
 
+const menu = document.getElementById("menu");
+const button = document.getElementById("toggle-button");
+
+button.addEventListener("click", function () {
+  menu.classList.toggle("hidden");
+});
+
 function showWork(winfos) {
   if (!Array.isArray(winfos) || winfos.length == 0) return false;
   let result = "";
-  for (let i = 0; i < products.length; i++) {
+  for (let i = 0; i < winfos.length; i++) {
     const winfo = winfos[i];
     result += `
-    <div class="grid lg:grid-cols-3 grid-col-1 gap-3">
+    <div class="grid lg:grid-cols-3 grid-col-1 gap-8">
     <div>
-      <a href="#">
-        <img src="" alt="" />
+      <a href="detail.html?id=${winfo.id}">
+        <img src="${winfo.image}" alt="" />
       </a>
     </div>
     <div class="col-span-2">
       <h3 class="text-[30px] leading-[60px] font-bold">
-        ${winfo.name}
+      <a href="detail.html?id=${winfo.id}">${winfo.name}</a>
       </h3>
       <div class="mb-4">
         <span class="p-1 bg-[#142850] text-white rounded-lg mr-3"

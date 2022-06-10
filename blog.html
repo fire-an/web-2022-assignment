@@ -20,12 +20,45 @@
   </head>
   <body>
     <div class="container max-w-4xl mx-auto px-4 lg:px-0">
-      <header class="container lg:max-w-4xl mx-auto mt-6 mb-10">
-        <ul class="flex justify-end space-x-8">
-          <li><a class="font-medium" href="#">Works</a></li>
-          <li><a class="font-medium text-[#FF6464]" href="#">Blog</a></li>
-          <li><a class="font-medium" href="#">Contact</a></li>
-        </ul>
+      <header class="mt-6 mb-10">
+        <div
+          class="menu-moblie lg:hidden block flex justify-end order-1 lg:order-2"
+          id="toggle-button"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-6 w-6"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M4 6h16M4 10h16M4 14h16M4 18h16"
+            />
+          </svg>
+        </div>
+        <div class="menu-pc hidden lg:block" id="menu">
+          <ul class="lg:flex lg:justify-end lg:space-x-8 text-center">
+            <li
+              class="block py-2 hover:text-[#FF6464] hover:bg-[#EDF7FA] lg:hover:bg-white"
+            >
+              <a class="font-medium" href="work.html">Works</a>
+            </li>
+            <li
+              class="block py-2 hover:text-[#FF6464] hover:bg-[#EDF7FA] lg:hover:bg-white"
+            >
+              <a class="font-medium" href="blog.html">Blog</a>
+            </li>
+            <li
+              class="block py-2 hover:text-[#FF6464] hover:bg-[#EDF7FA] lg:hover:bg-white"
+            >
+              <a class="font-medium" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
       </header>
       <section class="blog mb-10">
         <h1 class="font-bold lg:text-[44px] text-[30px] mb-[50px]">Blog</h1>
@@ -120,5 +153,13 @@
         <p>Copyright ©2020 All rights reserved</p>
       </footer>
     </div>
+    <script>
+      const menu = document.getElementById("menu");
+      const button = document.getElementById("toggle-button");
+
+      button.addEventListener("click", function () {
+        menu.classList.toggle("hidden");
+      });
+    </script>
   </body>
 </html>

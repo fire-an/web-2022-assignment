@@ -20,24 +20,55 @@
   </head>
   <body>
     <div class="container max-w-4xl mx-auto">
-      <header class="container lg:max-w-4xl mx-auto mt-6">
-        <ul class="flex justify-end space-x-8">
-          <li><a class="font-medium" href="work.html">Works</a></li>
-          <li><a class="font-medium" href="blog.html">Blog</a></li>
-          <li><a class="font-medium" href="#">Contact</a></li>
-        </ul>
-      </header>
-      <section class="detail">
-        <h1>Designing Dashboards with usability in mind</h1>
-        <div>
-          <span>2020</span><span>Dashboard, User Experience Design</span>
-          <p>
-            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
-            sint. Velit officia consequat duis enim velit mollit. Exercitation
-            veniam consequat sunt nostrud amet.
-          </p>
+      <header class="mt-6 mb-10">
+        <div
+          class="menu-moblie lg:hidden block flex justify-end order-1 lg:order-2"
+          id="toggle-button"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-6 w-6"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M4 6h16M4 10h16M4 14h16M4 18h16"
+            />
+          </svg>
         </div>
-      </section>
+        <div class="menu-pc hidden lg:block" id="menu">
+          <ul class="lg:flex lg:justify-end lg:space-x-8 text-center">
+            <li
+              class="block py-2 hover:text-[#FF6464] hover:bg-[#EDF7FA] lg:hover:bg-white"
+            >
+              <a class="font-medium" href="work.html">Works</a>
+            </li>
+            <li
+              class="block py-2 hover:text-[#FF6464] hover:bg-[#EDF7FA] lg:hover:bg-white"
+            >
+              <a class="font-medium" href="blog.html">Blog</a>
+            </li>
+            <li
+              class="block py-2 hover:text-[#FF6464] hover:bg-[#EDF7FA] lg:hover:bg-white"
+            >
+              <a class="font-medium" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </header>
+      <section id="detail"></section>
     </div>
+    <script type="module" src="src/js/detail.js">
+      //       const menu = document.getElementById("menu");
+      // const button = document.getElementById("toggle-button");
+
+      // button.addEventListener("click", function () {
+      //   menu.classList.toggle("hidden");
+      // });
+    </script>
   </body>
 </html>
