@@ -13,7 +13,7 @@ function showWork(winfos) {
   for (let i = 0; i < winfos.length; i++) {
     const winfo = winfos[i];
     result += `
-    <div class="grid lg:grid-cols-3 grid-col-1 gap-8">
+    <div class="grid lg:grid-cols-3 grid-cols-1 lg:gap-8 gap-0">
     <div>
       <a href="detail.html?id=${winfo.id}">
         <img src="${winfo.image}" alt="" />
