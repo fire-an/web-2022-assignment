@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <title>Blogs</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -62,70 +62,7 @@
       </header>
       <section class="blog mb-10">
         <h1 class="font-bold lg:text-[44px] text-[30px] mb-[50px]">Blog</h1>
-        <div>
-          <h3 class="text-[30px] text-[#21243D] font-medium">
-            UI Interactions of the week
-          </h3>
-          <div class="my-3">
-            <span class="text-[#21243D] text-[20px]">12 Feb 2019</span
-            ><span class="mx-3">|</span
-            ><span class="text-[#8695A4] text-[20px]">Express, Handlebars</span>
-          </div>
-          <p>
-            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
-            sint. Velit officia consequat duis enim velit mollit. Exercitation
-            veniam consequat sunt nostrud amet.
-          </p>
-        </div>
-        <hr class="my-8" />
-        <div class="">
-          <h3 class="text-[30px] text-[#21243D] font-medium">
-            UI Interactions of the week
-          </h3>
-          <div class="my-3">
-            <span class="text-[#21243D] text-[20px]">12 Feb 2019</span
-            ><span class="mx-3">|</span
-            ><span class="text-[#8695A4] text-[20px]">Express, Handlebars</span>
-          </div>
-          <p>
-            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
-            sint. Velit officia consequat duis enim velit mollit. Exercitation
-            veniam consequat sunt nostrud amet.
-          </p>
-        </div>
-        <hr class="my-8" />
-        <div>
-          <h3 class="text-[30px] text-[#21243D] font-medium">
-            UI Interactions of the week
-          </h3>
-          <div class="my-3">
-            <span class="text-[#21243D] text-[20px]">12 Feb 2019</span
-            ><span class="mx-3">|</span
-            ><span class="text-[#8695A4] text-[20px]">Express, Handlebars</span>
-          </div>
-          <p>
-            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
-            sint. Velit officia consequat duis enim velit mollit. Exercitation
-            veniam consequat sunt nostrud amet.
-          </p>
-        </div>
-        <hr class="my-8" />
-        <div>
-          <h3 class="text-[30px] text-[#21243D] font-medium">
-            UI Interactions of the week
-          </h3>
-          <div class="my-3">
-            <span class="text-[#21243D] text-[20px]">12 Feb 2019</span
-            ><span class="mx-3">|</span
-            ><span class="text-[#8695A4] text-[20px]">Express, Handlebars</span>
-          </div>
-          <p>
-            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
-            sint. Velit officia consequat duis enim velit mollit. Exercitation
-            veniam consequat sunt nostrud amet.
-          </p>
-        </div>
-        <hr class="my-8" />
+        <div id="posts"></div>
       </section>
       <footer class="container max-w-4xl mx-auto text-center">
         <ul class="flex justify-center space-x-10 mb-5">
@@ -165,7 +102,7 @@
         <p>Copyright ©2020 All rights reserved</p>
       </footer>
     </div>
-    <script>
+    <script type="module" src="./src/js/post.js">
       const menu = document.getElementById("menu");
       const button = document.getElementById("toggle-button");
 

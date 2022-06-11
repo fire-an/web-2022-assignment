@@ -1,5 +1,12 @@
 import { workInfo } from "./data";
 
+const menu = document.getElementById("menu");
+const button = document.getElementById("toggle-button");
+
+button.addEventListener("click", function () {
+  menu.classList.toggle("hidden");
+});
+
 const id = new URLSearchParams(window.location.search).get("id");
 
 function showWork(works) {
@@ -7,15 +14,15 @@ function showWork(works) {
   let result = "";
   const work = works.find((item) => item.id == id);
   result = `
-  <div class="grid lg:grid-cols-3 grid-col-1 gap-8">
-  <div>
-    <a href="#">
-      <img src="${work.image}" alt="" />
-    </a>
+  <div class="">
+  <div class="">
+    
+      <img class="mx-auto mb-5" src="${work.image}" alt="" />
+    
   </div>
   <div class="col-span-2">
     <h3 class="text-[30px] leading-[60px] font-bold">
-    <a href="#">${work.name}</a>
+    ${work.name}
     </h3>
     <div class="mb-4">
       <span class="p-1 bg-[#142850] text-white rounded-lg mr-3"

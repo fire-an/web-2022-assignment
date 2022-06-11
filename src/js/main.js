@@ -50,7 +50,7 @@ function showWorks(winfos) {
     result += `
     <div class="grid lg:grid-cols-3 grid-cols-1 lg:gap-8 gap-1">
     <div>
-      <a href="#">
+      <a href="#detail.html?id=${winfo.id}">
         <img class="w-full block" src="${winfo.image}" alt="" />
       </a>
     </div>

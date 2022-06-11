@@ -18,9 +18,11 @@
       }
     </style>
   </head>
-  <body>
-    <div class="container max-w-4xl mx-auto">
-      <header class="mt-6 mb-10">
+  <body class="">
+    <div class="container max-w-4xl mx-auto px-4 lg:px-0">
+      <header
+        class="container lg:max-w-5xl mx-auto mt-6 mb-[60px] order-2 lg:order-1"
+      >
         <div
           class="menu-moblie lg:hidden block flex justify-end order-1 lg:order-2"
           id="toggle-button"
@@ -60,15 +62,52 @@
           </ul>
         </div>
       </header>
-      <section id="detail"></section>
+      <section id="detail" class="mb-[200px]"></section>
+      <footer class="container max-w-4xl mx-auto text-center">
+        <ul class="flex justify-center space-x-1 0 mb-5 space-x-5">
+          <li>
+            <a href="#"
+              ><img
+                class="w-9 h-9"
+                src="https://res.cloudinary.com/do2d1jyoh/image/upload/v1654838730/fb_btvwct.png"
+                alt=""
+            /></a>
+          </li>
+          <li>
+            <a href="#"
+              ><img
+                class="w-9 h-9"
+                src="https://res.cloudinary.com/do2d1jyoh/image/upload/v1654838730/insta_antjzh.png"
+                alt=""
+            /></a>
+          </li>
+          <li>
+            <a href="#"
+              ><img
+                class="w-9 h-9"
+                src="https://res.cloudinary.com/do2d1jyoh/image/upload/v1654838730/Group_vcplip.png"
+                alt=""
+            /></a>
+          </li>
+          <li>
+            <a href="#"
+              ><img
+                class="w-9 h-9"
+                src="https://res.cloudinary.com/do2d1jyoh/image/upload/v1654838730/Linkedin_bjodnw.png"
+                alt=""
+            /></a>
+          </li>
+        </ul>
+        <p class="mb-5">Copyright ©2020 All rights reserved</p>
+      </footer>
     </div>
     <script type="module" src="./src/js/detail.js">
-      //       const menu = document.getElementById("menu");
-      // const button = document.getElementById("toggle-button");
+            const menu = document.getElementById("menu");
+      const button = document.getElementById("toggle-button");
 
-      // button.addEventListener("click", function () {
-      //   menu.classList.toggle("hidden");
-      // });
+      button.addEventListener("click", function () {
+        menu.classList.toggle("hidden");
+      });
     </script>
   </body>
 </html>

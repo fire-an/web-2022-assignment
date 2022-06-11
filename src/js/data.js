@@ -33,3 +33,27 @@ export const workInfo = [
     description: "Nhập môn lập trình",
   },
 ];
+
+export const posts = [
+  {
+    id: 1,
+    title: "Những điều cần lưu ý khi làm việc với hình ảnh trong dự án thực tế",
+    date: "12/8/2020",
+    description: "Lưu ý khi làm việc với ảnh",
+    shortDescription: "Images",
+  },
+  {
+    id: 2,
+    title: "Tổng hợp tài liệu hay từ Easy Frontend ",
+    date: "11/10/2019",
+    description: "Tài liệu Front End",
+    shortDescription: "Front End Data",
+  },
+  {
+    id: 3,
+    title: "Học lập trình ở đâu để thành công",
+    date: "06/02/2021",
+    description: "Cách học lập trình",
+    shortDescription: "Dev",
+  },
+];
