@@ -26,10 +26,11 @@ function showInfo(info) {
                 Download Resume
               </button>
             </div>
+            <div>
+            <img class="rounded-full" src="${info.image}" alt="" />
           </div>
-          <div>
-            <img src="" alt="" />
           </div>
+          
     `;
   return result;
 }
@@ -43,10 +44,10 @@ function showWorks(winfos) {
   for (let i = 0; i < winfos.length; i++) {
     const winfo = winfos[i];
     result += `
-    <div class="grid lg:grid-cols-3 grid-col-1 gap-8">
+    <div class="grid lg:grid-cols-3 grid-cols-1 lg:gap-8 gap-0">
     <div>
       <a href="#">
-        <img src="${winfo.image}" alt="" />
+        <img class="w-full block" src="${winfo.image}" alt="" />
       </a>
     </div>
     <div class="col-span-2">
@@ -65,7 +66,7 @@ function showWorks(winfos) {
       </p>
     </div>
   </div>
-  <hr class="my-5" />
+  <hr class="my-8 " />
         `;
   }
 

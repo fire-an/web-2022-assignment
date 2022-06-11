@@ -3,6 +3,8 @@ export const pinfo = {
   age: 26,
   job: "Front End Developer",
   address: "Linh Dam, Hoang Mai, Ha Noi",
+  image:
+    "https://res.cloudinary.com/do2d1jyoh/image/upload/v1654923655/assignment/16549236345311266700895839226123_qz2qlr.jpg",
 };
 
 export const workInfo = [
